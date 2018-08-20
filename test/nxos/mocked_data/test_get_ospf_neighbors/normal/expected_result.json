@@ -1,0 +1,280 @@
+{
+  "UNDERLAY": {
+    "global": {
+      "peers": {
+        "10.55.80.135": [
+          {
+            "is_enabled": true, 
+            "priority": 1, 
+            "uptime": -1, 
+            "description": "", 
+            "address": "10.55.80.197", 
+            "interface": "Eth2/22", 
+            "remote_id": "10.55.80.135", 
+            "is_up": true
+          }, 
+          {
+            "is_enabled": true, 
+            "priority": 1, 
+            "uptime": -1, 
+            "description": "", 
+            "address": "10.55.80.199", 
+            "interface": "Eth2/24", 
+            "remote_id": "10.55.80.135", 
+            "is_up": true
+          }
+        ], 
+        "10.55.80.134": [
+          {
+            "is_enabled": true, 
+            "priority": 1, 
+            "uptime": -1, 
+            "description": "", 
+            "address": "10.55.80.193", 
+            "interface": "Eth2/21", 
+            "remote_id": "10.55.80.134", 
+            "is_up": true
+          }, 
+          {
+            "is_enabled": true, 
+            "priority": 1, 
+            "uptime": -1, 
+            "description": "", 
+            "address": "10.55.80.195", 
+            "interface": "Eth2/23", 
+            "remote_id": "10.55.80.134", 
+            "is_up": true
+          }
+        ], 
+        "10.55.81.137": [
+          {
+            "is_enabled": true, 
+            "priority": 1, 
+            "uptime": -1, 
+            "description": "", 
+            "address": "10.55.81.2", 
+            "interface": "Vlan333", 
+            "remote_id": "10.55.81.137", 
+            "is_up": true
+          }
+        ]
+      }
+    }
+  }, 
+  "50": {
+    "NON_PROD": {
+      "peers": {
+        "10.55.29.189": [
+          {
+            "is_enabled": true, 
+            "priority": 1, 
+            "uptime": -1, 
+            "description": "", 
+            "address": "10.55.80.237", 
+            "interface": "Po145.702", 
+            "remote_id": "10.55.29.189", 
+            "is_up": true
+          }, 
+          {
+            "is_enabled": true, 
+            "priority": 1, 
+            "uptime": -1, 
+            "description": "", 
+            "address": "10.55.195.87", 
+            "interface": "Po145.751", 
+            "remote_id": "10.55.29.189", 
+            "is_up": true
+          }
+        ], 
+        "10.55.195.84": [
+          {
+            "is_enabled": true, 
+            "priority": 1, 
+            "uptime": -1, 
+            "description": "", 
+            "address": "10.55.195.89", 
+            "interface": "Eth1/43.702", 
+            "remote_id": "10.55.195.84", 
+            "is_up": true
+          }, 
+          {
+            "is_enabled": true, 
+            "priority": 1, 
+            "uptime": -1, 
+            "description": "", 
+            "address": "10.55.81.251", 
+            "interface": "Eth1/43.751", 
+            "remote_id": "10.55.195.84", 
+            "is_up": true
+          }
+        ]
+      }
+    }, 
+    "COLLAB-PROD": {
+      "peers": {
+        "10.29.28.125": [
+          {
+            "is_enabled": true, 
+            "priority": 1, 
+            "uptime": -1, 
+            "description": "", 
+            "address": "10.29.31.129", 
+            "interface": "Eth1/44.703", 
+            "remote_id": "10.29.28.125", 
+            "is_up": true
+          }
+        ], 
+        "10.29.28.124": [
+          {
+            "is_enabled": true, 
+            "priority": 1, 
+            "uptime": -1, 
+            "description": "", 
+            "address": "10.29.31.131", 
+            "interface": "Eth6/46.703", 
+            "remote_id": "10.29.28.124", 
+            "is_up": true
+          }
+        ]
+      }
+    }, 
+    "PROD": {
+      "peers": {
+        "10.55.1.157": [
+          {
+            "is_enabled": true, 
+            "priority": 1, 
+            "uptime": -1, 
+            "description": "", 
+            "address": "10.55.193.193", 
+            "interface": "Eth1/43.701", 
+            "remote_id": "10.55.1.157", 
+            "is_up": true
+          }
+        ], 
+        "10.55.1.156": [
+          {
+            "is_enabled": true, 
+            "priority": 1, 
+            "uptime": -1, 
+            "description": "", 
+            "address": "10.55.193.195", 
+            "interface": "Eth6/45.701", 
+            "remote_id": "10.55.1.156", 
+            "is_up": true
+          }
+        ]
+      }
+    }, 
+    "COLLAB-PRE-PROD": {
+      "peers": {
+        "10.29.56.252": [
+          {
+            "is_enabled": true, 
+            "priority": 1, 
+            "uptime": -1, 
+            "description": "", 
+            "address": "10.29.63.131", 
+            "interface": "Eth6/46.704", 
+            "remote_id": "10.29.56.252", 
+            "is_up": true
+          }
+        ], 
+        "10.29.56.253": [
+          {
+            "is_enabled": true, 
+            "priority": 1, 
+            "uptime": -1, 
+            "description": "", 
+            "address": "10.29.63.129", 
+            "interface": "Eth1/44.704", 
+            "remote_id": "10.29.56.253", 
+            "is_up": true
+          }
+        ], 
+        "10.29.63.61": [
+          {
+            "is_enabled": true, 
+            "priority": 1, 
+            "uptime": -1, 
+            "description": "", 
+            "address": "10.55.80.245", 
+            "interface": "Po145.704", 
+            "remote_id": "10.29.63.61", 
+            "is_up": true
+          }
+        ]
+      }
+    }, 
+    "INLINE-MGMT": {
+      "peers": {
+        "10.55.199.189": [
+          {
+            "is_enabled": true, 
+            "priority": 1, 
+            "uptime": -1, 
+            "description": "", 
+            "address": "10.55.80.253", 
+            "interface": "Po145.709", 
+            "remote_id": "10.55.199.189", 
+            "is_up": true
+          }
+        ]
+      }
+    }
+  }, 
+  "DCI": {
+    "OTV": {
+      "peers": {
+        "10.55.81.204": [
+          {
+            "is_enabled": true, 
+            "priority": 1, 
+            "uptime": -1, 
+            "description": "", 
+            "address": "10.55.81.212", 
+            "interface": "Eth2/9", 
+            "remote_id": "10.55.81.204", 
+            "is_up": true
+          }
+        ], 
+        "10.55.81.205": [
+          {
+            "is_enabled": true, 
+            "priority": 1, 
+            "uptime": -1, 
+            "description": "", 
+            "address": "10.55.81.218", 
+            "interface": "Eth2/11", 
+            "remote_id": "10.55.81.205", 
+            "is_up": true
+          }
+        ], 
+        "10.55.81.211": [
+          {
+            "is_enabled": true, 
+            "priority": 1, 
+            "uptime": -1, 
+            "description": "", 
+            "address": "10.55.80.143", 
+            "interface": "Po40.799", 
+            "remote_id": "10.55.81.211", 
+            "is_up": true
+          }
+        ], 
+        "10.55.81.210": [
+          {
+            "is_enabled": true, 
+            "priority": 1, 
+            "uptime": -1, 
+            "description": "", 
+            "address": "10.55.80.141", 
+            "interface": "Po39.799", 
+            "remote_id": "10.55.81.210", 
+            "is_up": true
+          }
+        ]
+      }
+    }
+  }
+}

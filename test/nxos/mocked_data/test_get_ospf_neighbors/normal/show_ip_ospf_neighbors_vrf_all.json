@@ -1,0 +1,256 @@
+{
+      "TABLE_ctx": {
+        "ROW_ctx": [
+          {
+            "ptag": "UNDERLAY",
+            "cname": "default",
+            "nbrcount": 5,
+            "TABLE_nbr": {
+              "ROW_nbr": [
+                {
+                  "rid": "10.55.81.137",
+                  "priority": 1,
+                  "state": "FULL",
+                  "drstate": " -",
+                  "uptime": "P4M17DT3H13M35S",
+                  "addr": "10.55.81.2",
+                  "intf": "Vlan333"
+                },
+                {
+                  "rid": "10.55.80.134",
+                  "priority": 1,
+                  "state": "FULL",
+                  "drstate": " -",
+                  "uptime": "P4M17DT3H26M56S",
+                  "addr": "10.55.80.193",
+                  "intf": "Eth2/21"
+                },
+                {
+                  "rid": "10.55.80.135",
+                  "priority": 1,
+                  "state": "FULL",
+                  "drstate": " -",
+                  "uptime": "P4M17DT3H26M50S",
+                  "addr": "10.55.80.197",
+                  "intf": "Eth2/22"
+                },
+                {
+                  "rid": "10.55.80.134",
+                  "priority": 1,
+                  "state": "FULL",
+                  "drstate": " -",
+                  "uptime": "P4M17DT3H26M55S",
+                  "addr": "10.55.80.195",
+                  "intf": "Eth2/23"
+                },
+                {
+                  "rid": "10.55.80.135",
+                  "priority": 1,
+                  "state": "FULL",
+                  "drstate": " -",
+                  "uptime": "P4M17DT3H26M55S",
+                  "addr": "10.55.80.199",
+                  "intf": "Eth2/24"
+                }
+              ]
+            }
+          },
+          {
+            "ptag": "DCI",
+            "cname": "OTV",
+            "nbrcount": 4,
+            "TABLE_nbr": {
+              "ROW_nbr": [
+                {
+                  "rid": "10.55.81.210",
+                  "priority": 1,
+                  "state": "FULL",
+                  "drstate": " -",
+                  "uptime": "P4M17DT3H26M53S",
+                  "addr": "10.55.80.141",
+                  "intf": "Po39.799"
+                },
+                {
+                  "rid": "10.55.81.211",
+                  "priority": 1,
+                  "state": "FULL",
+                  "drstate": " -",
+                  "uptime": "P4M17DT3H26M55S",
+                  "addr": "10.55.80.143",
+                  "intf": "Po40.799"
+                },
+                {
+                  "rid": "10.55.81.204",
+                  "priority": 1,
+                  "state": "FULL",
+                  "drstate": " -",
+                  "uptime": "P4M17DT3H26M57S",
+                  "addr": "10.55.81.212",
+                  "intf": "Eth2/9"
+                },
+                {
+                  "rid": "10.55.81.205",
+                  "priority": 1,
+                  "state": "FULL",
+                  "drstate": " -",
+                  "uptime": "P4M17DT3H26M57S",
+                  "addr": "10.55.81.218",
+                  "intf": "Eth2/11"
+                }
+              ]
+            }
+          },
+          {
+            "ptag": "50",
+            "cname": "PROD",
+            "nbrcount": 2,
+            "TABLE_nbr": {
+              "ROW_nbr": [
+                {
+                  "rid": "10.55.1.156",
+                  "priority": 1,
+                  "state": "FULL",
+                  "drstate": " -",
+                  "uptime": "P2M24DT1H2M45S",
+                  "addr": "10.55.193.195",
+                  "intf": "Eth6/45.701"
+                },
+                {
+                  "rid": "10.55.1.157",
+                  "priority": 1,
+                  "state": "FULL",
+                  "drstate": " -",
+                  "uptime": "P2M24DT1H2M48S",
+                  "addr": "10.55.193.193",
+                  "intf": "Eth1/43.701"
+                }
+              ]
+            }
+          },
+          {
+            "ptag": "50",
+            "cname": "NON_PROD",
+            "nbrcount": 4,
+            "TABLE_nbr": {
+              "ROW_nbr": [
+                {
+                  "rid": "10.55.195.84",
+                  "priority": 1,
+                  "state": "FULL",
+                  "drstate": " -",
+                  "uptime": "P2M24DT1H2M51S",
+                  "addr": "10.55.195.89",
+                  "intf": "Eth1/43.702"
+                },
+                {
+                  "rid": "10.55.29.189",
+                  "priority": 1,
+                  "state": "FULL",
+                  "drstate": " -",
+                  "uptime": "P2M15DT4H19M57S",
+                  "addr": "10.55.80.237",
+                  "intf": "Po145.702"
+                },
+                {
+                  "rid": "10.55.29.189",
+                  "priority": 1,
+                  "state": "FULL",
+                  "drstate": " -",
+                  "uptime": "P1M23DT22H46M21S",
+                  "addr": "10.55.195.87",
+                  "intf": "Po145.751"
+                },
+                {
+                  "rid": "10.55.195.84",
+                  "priority": 1,
+                  "state": "FULL",
+                  "drstate": " -",
+                  "uptime": "P1M23DT22H29M15S",
+                  "addr": "10.55.81.251",
+                  "intf": "Eth1/43.751"
+                }
+              ]
+            }
+          },
+          {
+            "ptag": "50",
+            "cname": "COLLAB-PROD",
+            "nbrcount": 2,
+            "TABLE_nbr": {
+              "ROW_nbr": [
+                {
+                  "rid": "10.29.28.124",
+                  "priority": 1,
+                  "state": "FULL",
+                  "drstate": " -",
+                  "uptime": "P2M24DT1H2M51S",
+                  "addr": "10.29.31.131",
+                  "intf": "Eth6/46.703"
+                },
+                {
+                  "rid": "10.29.28.125",
+                  "priority": 1,
+                  "state": "FULL",
+                  "drstate": " -",
+                  "uptime": "P2M24DT1H2M49S",
+                  "addr": "10.29.31.129",
+                  "intf": "Eth1/44.703"
+                }
+              ]
+            }
+          },
+          {
+            "ptag": "50",
+            "cname": "COLLAB-PRE-PROD",
+            "nbrcount": 3,
+            "TABLE_nbr": {
+              "ROW_nbr": [
+                {
+                  "rid": "10.29.56.252",
+                  "priority": 1,
+                  "state": "FULL",
+                  "drstate": " -",
+                  "uptime": "P2M24DT1H2M45S",
+                  "addr": "10.29.63.131",
+                  "intf": "Eth6/46.704"
+                },
+                {
+                  "rid": "10.29.56.253",
+                  "priority": 1,
+                  "state": "FULL",
+                  "drstate": " -",
+                  "uptime": "P2M24DT1H2M51S",
+                  "addr": "10.29.63.129",
+                  "intf": "Eth1/44.704"
+                },
+                {
+                  "rid": "10.29.63.61",
+                  "priority": 1,
+                  "state": "FULL",
+                  "drstate": " -",
+                  "uptime": "P2M14DT2H13M23S",
+                  "addr": "10.55.80.245",
+                  "intf": "Po145.704"
+                }
+              ]
+            }
+          },
+          {
+            "ptag": "50",
+            "cname": "INLINE-MGMT",
+            "nbrcount": 1,
+            "TABLE_nbr": {
+              "ROW_nbr": {
+                "rid": "10.55.199.189",
+                "priority": 1,
+                "state": "FULL",
+                "drstate": " -",
+                "uptime": "P2M9DT23H35M50S",
+                "addr": "10.55.80.253",
+                "intf": "Po145.709"
+              }
+            }
+          }
+        ]
+      }
+    }
