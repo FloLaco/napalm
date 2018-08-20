@@ -603,3 +603,16 @@ class TestGettersNetworkDriver(object):
             result = result and self._test_model(models.vni, vni_data)
 
         self.assertTrue(result)
+
+    def test_get_ospf_neighbors(self):
+        try:
+            get_ospf_neighbors = self.device.get_ospf_neighbors()
+        except NotImplementedError:
+            raise SkipTest()
+        for proc, proc_data in get_ospf_neighbors.items():
+            for vrf, vrf_data in proc_data.items():
+                for peers, peer_data in vrf_data['peers'].items():
+                    for peer in peer_data:
+                        result = self._test_model(models.ospf_peer, peer)
+
+        self.assertTrue(result)

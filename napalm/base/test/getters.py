@@ -537,3 +537,16 @@ class BaseTestGetters(object):
         for vni, vni_data in get_vni.items():
             assert helpers.test_model(models.vni, vni_data)
         return get_vni
+
+    @wrap_test_cases
+    def test_get_ospf_neighbors(self, test_case):
+        """Test get_ospf_neighbors."""
+        get_ospf_neighbors = self.device.get_ospf_neighbors()
+
+        for proc, proc_data in get_ospf_neighbors.items():
+            for vrf, vrf_data in proc_data.items():
+                for peer, peer_data in vrf_data['peers'].items():
+                    for peer in peer_data:
+                        assert helpers.test_model(models.ospf_peer, peer)
+
+        return get_ospf_neighbors

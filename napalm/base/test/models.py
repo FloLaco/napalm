@@ -351,3 +351,14 @@ vni = {
     'type': text_type,
     'mode': text_type
 }
+
+ospf_peer = {
+    'is_enabled': bool,
+    'uptime': int,
+    'description': text_type,
+    'remote_id': text_type,
+    'priority': int,
+    'is_up': bool,
+    'address': text_type,
+    'interface': text_type
+}

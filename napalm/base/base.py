@@ -1649,6 +1649,71 @@ class NetworkDriver(object):
         """
         raise NotImplementedError
 
+    def get_ospf_neighbors(self):
+        """
+        Returns a dictionary of dictionaries. The keys for the first dictionary will be
+        the OSPF processes. The inner dictionary will contain each vrf. Each vrf contain
+        a dictionary of dictionaries. The keys for this first dictionary will be
+        some information about this vrf. The inner dictionary will contain a list of peers:
+
+          * peers - another dictionary of dictionaries. Outer keys are the IPs of the neighbors. \
+            The inner keys are:
+             * remote_id - peer router id
+             * address - peer ip address
+             * is_up (True/False)
+             * is_enabled (True/False)
+             * description (string)
+             * uptime (int in seconds)
+             * priority (int)
+             * interface
+
+            Example::
+
+                {
+                    "UNDERLAY": {
+                        "global": {
+                        "peers": {
+                            "10.0.0.1": [
+                            {
+                                "is_enabled": true,
+                                "priority": 1,
+                                "uptime": -1,
+                                "description": "",
+                                "address": "10.1.1.1",
+                                "interface": "Eth2/22",
+                                "remote_id": "10.0.0.1",
+                                "is_up": true
+                            },
+                            {
+                                "is_enabled": true,
+                                "priority": 1,
+                                "uptime": -1,
+                                "description": "",
+                                "address": "10.1.1.2",
+                                "interface": "Eth2/24",
+                                "remote_id": "10.0.0.1",
+                                "is_up": true
+                            }
+                            ],
+                            "10.0.0.2": [
+                            {
+                                "is_enabled": true,
+                                "priority": 1,
+                                "uptime": -1,
+                                "description": "",
+                                "address": "10.1.1.3",
+                                "interface": "Eth2/21",
+                                "remote_id": "10.0.0.2",
+                                "is_up": true
+                            }
+                            ]
+                        }
+                        }
+                    }
+                }
+        """
+        raise NotImplementedError
+
     def compliance_report(self, validation_file=None, validation_source=None):
         """
         Return a compliance report.

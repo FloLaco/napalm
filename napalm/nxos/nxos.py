@@ -1170,3 +1170,64 @@ class NXOSDriver(NXOSDriverBase):
                 'flags': flags
             }
         return vni_dict
+
+    def get_ospf_neighbors(self):
+        results = {}
+        ospf_state_dict = {
+            'ATTEMPT': {'is_up': False, 'is_enabled': True},
+            '2-WAY': {'is_up': False, 'is_enabled': True},
+            'INIT': {'is_up': False, 'is_enabled': True},
+            'FULL': {'is_up': True, 'is_enabled': True},
+            'EXSTART': {'is_up': False, 'is_enabled': True},
+            'EXCHANGE': {'is_up': False, 'is_enabled': True},
+            'LOADING': {'is_up': False, 'is_enabled': True},
+            'DOWN': {'is_up': False, 'is_enabled': False},
+        }
+
+        try:
+            cmd = 'show ip ospf neighbors vrf all'
+            prx_list = self._get_command_table(cmd, 'TABLE_ctx', 'ROW_ctx')
+        except CLIError:
+            prx_list = []
+
+        for prx_dict in prx_list:
+            result_prx_dict = {
+                'peers': {}
+            }
+
+            peer_list = prx_dict.get('TABLE_nbr', {}).get('ROW_nbr', [])
+            if isinstance(peer_list, dict):
+                peer_list = [peer_list]
+
+            for neighbor_dict in peer_list:
+                neighborid = napalm.base.helpers.ip(neighbor_dict['rid'])
+                state = py23_compat.text_type(neighbor_dict['state'])
+                priority = int(neighbor_dict['priority'])
+                addr = napalm.base.helpers.ip(neighbor_dict['addr'])
+                intf = py23_compat.text_type(neighbor_dict['intf'])
+                ospf_state = ospf_state_dict[state]
+
+                result_peer_dict = {
+                    'remote_id': neighborid,
+                    'is_enabled': ospf_state['is_enabled'],
+                    'uptime': -1,
+                    'description': '',
+                    'is_up': ospf_state['is_up'],
+                    'priority': priority,
+                    'interface': intf,
+                    'address': addr
+                }
+                if result_prx_dict['peers'].get(neighborid):
+                    result_prx_dict['peers'][neighborid].append(result_peer_dict)
+                else:
+                    result_prx_dict['peers'][neighborid] = [result_peer_dict]
+
+            prx_name = prx_dict['ptag']
+            vrf_name = prx_dict['cname']
+            if vrf_name == 'default':
+                vrf_name = 'global'
+            if results.get(prx_name):
+                results[prx_name].update({vrf_name: result_prx_dict})
+            else:
+                results[prx_name] = {vrf_name: result_prx_dict}
+        return results
